@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-// Define the type for a star
 interface Star {
     id: number;
     size: number;
@@ -10,21 +9,21 @@ interface Star {
     animationDuration: number;
 }
 
+
 export const StarBackground = () => {
     const [stars, setStars] = useState<Star[]>([]);
-
     useEffect(() => {
         generateStars();
     }, []);
 
     const generateStars = () => {
         const numOfStars = Math.floor(
-            (window.innerWidth * window.innerHeight) / 10000
+            (window.innerWidth * window.innerHeight) / 7000
         );
         const newStars: Star[] = [];
         for (let i = 0; i < numOfStars; i++) {
             newStars.push({
-                id: i, // Use the loop index as a unique ID
+                id: i,
                 size: Math.random() * 3 + 1,
                 x: Math.random() * 100,
                 y: Math.random() * 100,
