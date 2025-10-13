@@ -9,12 +9,8 @@ interface Star {
     animationDuration: number;
 }
 
-
 export const StarBackground = () => {
     const [stars, setStars] = useState<Star[]>([]);
-    useEffect(() => {
-        generateStars();
-    }, []);
 
     const generateStars = () => {
         const numOfStars = Math.floor(
@@ -33,6 +29,21 @@ export const StarBackground = () => {
         }
         setStars(newStars);
     };
+
+    useEffect(() => {
+        generateStars();
+
+        const handleResize = () => {
+            generateStars();
+        };
+
+        window.addEventListener("resize", handleResize);
+
+        // Cleanup event listener on unmount
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
 
     return (
         <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
