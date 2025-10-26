@@ -2,6 +2,7 @@ import { ThemeToggle } from "../Components/ThemeToggle"
 import { StarBackground } from "../Components/StarBackground"
 import { Navbar } from "../Components/Navbar";
 import { HeroSection } from "../Components/HeroSection";
+import { AboutMe } from "../Components/AboutSection";
 
 export const Home = () => {
   console.log("Home component is rendering.");
@@ -22,6 +23,7 @@ export const Home = () => {
         {/* Main Content */}
         <main>  
           <HeroSection />
+          <AboutMe />
         </main>
     </div>
   )
