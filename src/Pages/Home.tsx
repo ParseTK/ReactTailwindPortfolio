@@ -5,6 +5,7 @@ import { HeroSection } from "../Components/HeroSection";
 import { AboutMe } from "../Components/AboutSection";
 import { SkillsSection } from "../Components/SkillsSection";
 import { ProjectsSection } from "../Components/ProjectsSection";
+import { ContactSection } from "@/Components/ContactSection";
 
 export const Home = () => {
   console.log("Home component is rendering.");
@@ -26,6 +27,7 @@ export const Home = () => {
           <AboutMe />
           <SkillsSection />
           <ProjectsSection />
+          <ContactSection />
         </main>
     </div>
   )

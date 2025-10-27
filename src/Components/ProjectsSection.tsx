@@ -4,10 +4,40 @@ const projects = [
     {
         id: 1,
         title: "HomeScreen",
-        description: "Description for project one.",
+        description: "Portfolio Website",
         image: "/projects/HomeScreen.png",
         tags: ["React", "TypeScript", "Tailwind CSS"],
         githubUrl: "#https://github.com/ParseTK/ReactTailwindPortfolio",
+        liveUrl: "#"
+
+    },
+    {
+        id: 2,
+        title: "FinTk",
+        description: "Full-stack Stock trends",
+        image: "/projects/FinTk.png",
+        tags: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express", "C#"],
+        githubUrl: "#https://github.com/ParseTK/FinTk/tree/main/frontend",
+        liveUrl: "#"
+
+    },
+    {
+        id: 3,
+        title: "PhotoDemo",
+        description: "OOP Fundamentals in C#",
+        image: "/projects/PhotoDemo.png",
+        tags: ["C#"],
+        githubUrl: "#https://github.com/ParseTK/C_Sharp_Projects/blob/main/CSharpExercises/PhotoDemo.cs",
+        liveUrl: "#"
+
+    },
+    {
+        id: 4,
+        title: "PaintJob",
+        description: "Calculates paint needed and cost for a job",
+        image: "/projects/PaintJob.png",
+        tags: ["Python"],
+        githubUrl: "#https://github.com/ParseTK/pythonProjects/blob/main/Paint%20Job.py",
         liveUrl: "#"
 
     },
