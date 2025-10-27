@@ -39,12 +39,12 @@ export const Navbar = () => {
                         </span>
                     </a>
                     {/* Desktop nav items */}
-                    <div className="hidden md:flex space-x-8">
+                    <div className="hidden md:flex space-x-8 mx-6">
                         {navItems.map((item, key) => (
                             <a 
                                 key={key} 
                                 href={item.href} 
-                                className="text-foreground/80 hover:tyext-primary transition-colors duration-300"
+                                className="text-foreground/80 hover:text-primary transition-colors duration-300"
                             >
                                 {item.name}
                             </a>
@@ -74,7 +74,7 @@ export const Navbar = () => {
                                 <a 
                                     key={key} 
                                     href={item.href} 
-                                    className="text-foreground/80 hover:tyext-primary transition-colors duration-300"
+                                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {item.name}
